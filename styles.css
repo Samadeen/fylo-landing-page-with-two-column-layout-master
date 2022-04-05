@@ -116,6 +116,7 @@ button:hover {
 }
 
 button:active {
+  outline: none;
   transform: scale(0.96);
 }
 
@@ -263,7 +264,12 @@ footer {
 
 .footer__links ul li {
   list-style: none;
+  cursor: pointer;
   margin-bottom: 1rem;
+}
+
+.footer__links ul li:hover {
+  color: var(--desaturated-Blue);
 }
 
 .icon {
@@ -302,7 +308,7 @@ footer {
 }
 
 .fa-brands:hover {
-  background-color: var(--pink);
+  background-color: var(--desaturated-Blue);
 }
 
 .attribution {
@@ -359,7 +365,7 @@ footer {
   }
 
   .hero__form label button {
-    margin: 0 0 1rem 1rem;
+    margin: 0.5rem 0 1rem 1rem;
     flex: 0.35;
   }
 
